@@ -14,21 +14,22 @@
 
   "experience": [
     {
+      "year": "2025",
+      "date": "2025 - Present",
+      "role": "Freelance Developer",
+      "company": "Independent",
+      "description": "Started building skills and learning version control with Git, frontend design, and backend fundamentals independently.",
+      "tags": ["HTML", "CSS", "JavaScript", "Git", "Java"],
+      "active": true
+    },
+    {
+      
       "year": "2024",
       "date": "2022 – Present",
       "role": "CS Student",
       "company": "University of Malawi",
       "description": "Pursuing a Bachelor of Science in Computer Science. Studying algorithms, data structures, databases, software engineering, and web development. Building hands-on projects alongside coursework.",
       "tags": ["C++", "Databases", "Web Dev", "Algorithms"],
-      "active": true
-    },
-    {
-      "year": "2022",
-      "date": "Self-taught",
-      "role": "Freelance Developer",
-      "company": "Independent",
-      "description": "Started building personal and learning version control with Git, frontend design, and backend fundamentals independently.",
-      "tags": ["HTML", "CSS", "JavaScript", "Git", "Java"],
       "active": false
     }
   ],
@@ -60,16 +61,6 @@
       "liveUrl": "",
       "status": "coming-soon",
       "preview": "database"
-    }
-  ],
-
-  "articles": [
-    {
-      "title": "Getting Started with Git and GitHub",
-      "date": "2025-01-15",
-      "summary": "A beginner-friendly guide to version control — initializing repos, staging commits, and pushing to GitHub from Git Bash.",
-      "tags": ["Git", "GitHub", "Tutorial"],
-      "url": "#"
     }
   ]
 }
