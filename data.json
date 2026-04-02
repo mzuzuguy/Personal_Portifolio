@@ -1,0 +1,75 @@
+{
+  "skills": [
+    { "icon": "☕",  "color": "",        "name": "Java"       },
+    { "icon": "JS",  "color": "#f7df1e", "name": "JavaScript" },
+    { "icon": "TS",  "color": "#3178c6", "name": "TypeScript" },
+    { "icon": "Nest", "color": "#e0234e", "name": "NestJS"     },
+    { "icon": "⑤",  "color": "#e34f26", "name": "HTML5"      },
+    { "icon": "③",  "color": "#264de4", "name": "CSS3"       },
+    { "icon": "C++", "color": "#b07219", "name": "C++"        },
+    { "icon": "🐘",  "color": "#336791", "name": "SQL"        },
+    { "icon": "⎇",  "color": "#f05032", "name": "Git"        },
+    { "icon": "🐍",  "color": "#3fb950", "name": "Python"     }
+  ],
+
+  "experience": [
+    {
+      "year": "2024",
+      "date": "2022 – Present",
+      "role": "CS Student",
+      "company": "University of Malawi",
+      "description": "Pursuing a Bachelor of Science in Computer Science. Studying algorithms, data structures, databases, software engineering, and web development. Building hands-on projects alongside coursework.",
+      "tags": ["C++", "Databases", "Web Dev", "Algorithms"],
+      "active": true
+    },
+    {
+      "year": "2022",
+      "date": "Self-taught",
+      "role": "Freelance Developer",
+      "company": "Independent",
+      "description": "Started building personal and learning version control with Git, frontend design, and backend fundamentals independently.",
+      "tags": ["HTML", "CSS", "JavaScript", "Git", "Java"],
+      "active": false
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "A developer portfolio built with HTML, CSS and JavaScript — terminal-themed, fully responsive, and deployed on GitHub Pages.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "codeUrl": "https://github.com/mzuzuguy",
+      "liveUrl": "#",
+      "status": "live",
+      "preview": "portfolio"
+    },
+    {
+      "title": "Student Management System",
+      "description": "A C++ application implementing file I/O, OOP, pointers and references for managing student records.",
+      "tags": ["C++", "OOP", "File I/O"],
+      "codeUrl": "",
+      "liveUrl": "",
+      "status": "coming-soon",
+      "preview": "code"
+    },
+    {
+      "title": "Database Project",
+      "description": "An Oracle SQL database system built for a company schema — managing employees, products, and transactions.",
+      "tags": ["Oracle SQL", "PDB", "DDL/DML"],
+      "codeUrl": "",
+      "liveUrl": "",
+      "status": "coming-soon",
+      "preview": "database"
+    }
+  ],
+
+  "articles": [
+    {
+      "title": "Getting Started with Git and GitHub",
+      "date": "2025-01-15",
+      "summary": "A beginner-friendly guide to version control — initializing repos, staging commits, and pushing to GitHub from Git Bash.",
+      "tags": ["Git", "GitHub", "Tutorial"],
+      "url": "#"
+    }
+  ]
+}
