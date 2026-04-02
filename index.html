@@ -233,7 +233,7 @@
     </section>
 
     <!-- ─────────────────────────────────────────
-     CONTACT  (static)
+     CONTACT  (working contact form with Formspree)
 ───────────────────────────────────────── -->
     <section id="contact" class="fade-in">
       <div class="contact-inner">
@@ -244,13 +244,61 @@
           <span class="kw">const</span> contact =
           <span class="str">'Let\'s build something amazing together!'</span>;
         </div>
-        <a
-          href="mailto:precious@example.com"
-          class="btn-primary"
-          style="display: inline-flex; margin: 0 auto"
-        >
-          <i class="fa-solid fa-envelope"></i> Send Message
-        </a>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              required
+              class="form-input"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              required
+              class="form-input"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="subject"
+              placeholder="Subject"
+              class="form-input"
+            />
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              placeholder="Your Message..."
+              rows="5"
+              required
+              class="form-textarea"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn-primary"
+            style="width: 100%; margin-top: 12px"
+          >
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+
+        <div
+          id="form-status"
+          class="form-status"
+          style="display: none; margin-top: 16px; text-align: center"
+        ></div>
       </div>
     </section>
 
@@ -266,5 +314,72 @@
 
     <!-- main.js handles rendering + all interactions -->
     <script src="main.js"></script>
+
+    <!-- EmailJS Library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"
+    ></script>
+
+    <!-- Contact Form Handler with EmailJS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize EmailJS
+        // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+        emailjs.init("YOUR_PUBLIC_KEY");
+
+        const contactForm = document.getElementById("contact-form");
+        const formStatus = document.getElementById("form-status");
+
+        if (contactForm) {
+          contactForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            try {
+              // Send email using EmailJS
+              // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs
+              const response = await emailjs.send(
+                "YOUR_SERVICE_ID",
+                "YOUR_TEMPLATE_ID",
+                {
+                  to_email: "preciousmusole18@gmail.com",
+                  from_name: name,
+                  from_email: email,
+                  subject: subject,
+                  message: message,
+                },
+              );
+
+              // Show success message
+              formStatus.textContent =
+                "✓ Message sent successfully! I'll get back to you soon.";
+              formStatus.className = "form-status success";
+              formStatus.style.display = "block";
+
+              // Reset form
+              contactForm.reset();
+
+              // Hide success message after 5 seconds
+              setTimeout(() => {
+                formStatus.style.display = "none";
+              }, 5000);
+            } catch (error) {
+              // Show error message
+              formStatus.textContent =
+                "✗ Error sending message. Please try again or email me directly.";
+              formStatus.className = "form-status error";
+              formStatus.style.display = "block";
+              console.error("EmailJS error:", error);
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
