@@ -207,17 +207,37 @@ function renderArticles(articles) {
 
   section.style.display = '';
 
-  grid.innerHTML = articles.map(article => `
-    <a class="article-card" href="${article.url}" target="_blank">
-      <div class="article-date">${formatDate(article.date)}</div>
-      <div class="article-title">${article.title}</div>
-      <div class="article-summary">${article.summary}</div>
-      <div class="tag-list" style="margin-top:12px;">
-        ${article.tags.map(t => `<span class="tag">${t}</span>`).join('')}
-      </div>
-      <div class="article-read-more">Read more <i class="fa-solid fa-arrow-right"></i></div>
-    </a>
-  `).join('');
+  grid.innerHTML = articles.map(article => {
+    let articleLink = article.url || article.file || '#';
+
+    if (!/^https?:\/\//i.test(articleLink) && articleLink.endsWith('.json')) {
+      const slug = articleLink.replace(/^articles\//, '').replace(/\.json$/i, '');
+      articleLink = `article.html?article=${encodeURIComponent(slug)}`;
+    }
+
+    if (!/^https?:\/\//i.test(articleLink) && articleLink.startsWith('article.html')) {
+      articleLink = articleLink;
+    }
+
+    const isExternalLink = /^https?:\/\//i.test(articleLink);
+
+    return `
+      <a
+        class="article-card"
+        href="${articleLink}"
+        target="${isExternalLink ? '_blank' : '_self'}"
+        rel="${isExternalLink ? 'noopener noreferrer' : ''}"
+      >
+        <div class="article-date">${formatDate(article.date)}</div>
+        <div class="article-title">${article.title}</div>
+        <div class="article-summary">${article.summary}</div>
+        <div class="tag-list" style="margin-top:12px;">
+          ${article.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+        <div class="article-read-more">Read more <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+    `;
+  }).join('');
 }
 
 function formatDate(dateStr) {

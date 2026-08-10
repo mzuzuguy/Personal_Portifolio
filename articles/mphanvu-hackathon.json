@@ -1,0 +1,52 @@
+{
+  "title": "Virtual Hackathon - Finovate by MUBAS and National Bank",
+  "date": "2026-08-10",
+  "author": "Precious Musole",
+  "summary": "A reflection on the Virtual Hackathon - Finovate hosted by MUBAS and the National Bank of Malawi, where my team and I built Mphamvu and learned what it means to solve real problems under pressure.",
+  "tags": [
+    "Hackathon",
+    "Finovate",
+    "MUBAS",
+    "National Bank",
+    "Mphamvu",
+    "Teamwork"
+  ],
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The Virtual Hackathon - Finovate, hosted by MUBAS and the National Bank of Malawi, was one of the most inspiring events I have taken part in as a student developer. It brought together students and aspiring technologists to think seriously about how digital solutions can address real economic and social challenges in Malawi."
+    },
+    {
+      "type": "paragraph",
+      "text": "What stood out most was the practical focus of the event. This was not just a competition about writing code for the sake of it. It was a challenge to build something meaningful, useful, and grounded in real-life problems. That perspective changed the way I approached the whole experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "My team and I decided to work on Mphamvu, a product idea focused on financial habits, savings culture, and access to opportunities for young people. The problem was clear: many people want to improve their financial discipline, but tools and systems that make this easy to do are not always present or accessible. We wanted to create something that could help people build better savings habits and make more informed decisions."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the beginning, we had to think beyond the interface and the features. We had to consider users, problem validation, product flow, business value, and how the solution could really help people in practical ways. This made the project much more than a technical exercise. It became a product-thinking exercise."
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the biggest lessons I took away from the hackathon was the importance of teamwork. Everyone had different strengths, and each person contributed in a distinct way. We had to communicate clearly, break tasks down, agree on responsibilities, and keep moving even when the pressure was high. That kind of collaboration is one of the most valuable skills in software development."
+    },
+    {
+      "type": "paragraph",
+      "text": "I also learned a lot about rapid execution. In a hackathon, you do not have time to over-perfect every idea. You need to test assumptions quickly, build something functional, collect feedback, and iterate. That taught me how important it is to move with purpose while keeping quality in mind."
+    },
+    {
+      "type": "paragraph",
+      "text": "The experience also strengthened my understanding of how technology can support financial inclusion and youth empowerment. Seeing the event hosted by MUBAS and the National Bank made it even clearer that innovation matters when it is connected to real societal needs. We were not just building a project for a contest; we were trying to contribute to a bigger conversation about digital transformation and practical problem solving."
+    },
+    {
+      "type": "paragraph",
+      "text": "Looking back, the hackathon was more than a competition. It was a practical lesson in leadership, product design, collaboration, and persistence. It reminded me that software engineering is not only about writing code — it is also about understanding people, solving real problems, and building with intention."
+    },
+    {
+      "type": "paragraph",
+      "text": "I am grateful to MUBAS and the National Bank for creating an opportunity like this, and to my team for the effort, creativity, and energy we gave to Mphamvu. It was an experience that helped me grow as a developer and as a teammate, and I will carry those lessons forward into every project I build."
+    }
+  ]
+}

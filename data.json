@@ -1,16 +1,15 @@
 {
   "skills": [
-    { "icon": "☕",  "color": "",        "name": "Java"       },
-    {"icon": "🔷", "color": "#0175C2", "name": "Dart"},
-    { "icon": "🎯",  "color": "#02569B", "name": "Flutter"    },
-    { "icon": "TS",  "color": "#3178c6", "name": "TypeScript" },
-    { "icon": "Nest", "color": "#e0234e", "name": "NestJS"     },
-    { "icon": "⑤",  "color": "#e34f26", "name": "HTML5"      },
-    { "icon": "③",  "color": "#264de4", "name": "CSS3"       },
-    { "icon": "C++", "color": "#b07219", "name": "C++"        },
-    { "icon": "🐘",  "color": "#336791", "name": "SQL"        },
-    { "icon": "⎇",  "color": "#f05032", "name": "Git"        }
-  
+    { "icon": "☕", "color": "", "name": "Java" },
+    { "icon": "🔷", "color": "#0175C2", "name": "Dart" },
+    { "icon": "🎯", "color": "#02569B", "name": "Flutter" },
+    { "icon": "TS", "color": "#3178c6", "name": "TypeScript" },
+    { "icon": "Nest", "color": "#e0234e", "name": "NestJS" },
+    { "icon": "⑤", "color": "#e34f26", "name": "HTML5" },
+    { "icon": "③", "color": "#264de4", "name": "CSS3" },
+    { "icon": "C++", "color": "#b07219", "name": "C++" },
+    { "icon": "🐘", "color": "#336791", "name": "SQL" },
+    { "icon": "⎇", "color": "#f05032", "name": "Git" }
   ],
 
   "experience": [
@@ -23,9 +22,7 @@
       "tags": ["HTML", "CSS", "JavaScript", "Git", "Java"],
       "active": true
     },
- 
     {
-      
       "year": "2024",
       "date": "2022 – Present",
       "role": "CS Student",
@@ -33,7 +30,6 @@
       "description": "Pursuing a Bachelor of Science in Computer Science. Studying algorithms, data structures, databases, software engineering, and web development. Building hands-on projects alongside coursework.",
       "tags": ["C++", "Databases", "Web Dev", "Algorithms"],
       "active": false
-      
     }
   ],
 
@@ -41,13 +37,12 @@
     {
       "title": "Ramona Website Project",
       "description": "A website for Ramona Foundation • Malawi Building Hope for a Better Tomorrow We empower communities across Malawi through education, healthcare, and sustainable development — giving every person a chance to thrive.",
-      "tags": ["Progres", "PDB", "DDL/DML", "TypeStript", "HTML", "CSS", "Nestjs Framework"],
-      "codeUrl": "", 
+      "tags": ["Progress", "PDB", "DDL/DML", "TypeScript", "HTML", "CSS", "NestJS Framework"],
+      "codeUrl": "",
       "liveUrl": "",
       "status": "coming-soon",
       "preview": "website"
     },
-    
     {
       "title": "Mobile Money Switch Backend",
       "description": "A backend service for a mobile money interoperability platform that enables seamless transactions across multiple providers through a unified API. Built with NestJS and PostgreSQL, featuring secure authentication, payment processing, notifications, and a scalable architecture for financial services.",
@@ -56,17 +51,15 @@
       "status": "In development",
       "preview": "switch"
     },
-    
     {
       "title": "Portfolio Website",
-      "description": "A cyber security specialist portfolio built with HTML, CSS and JavaScript — has futuristic feel, fully responsive, and deployed on vercel.",
+      "description": "A cyber security specialist portfolio built with HTML, CSS and JavaScript — has futuristic feel, fully responsive, and deployed on Vercel.",
       "tags": ["HTML", "CSS", "JavaScript"],
       "codeUrl": "https://github.com/mzuzuguy/chance-web",
       "liveUrl": "https://chance-web-rho.vercel.app/",
       "status": "live",
       "preview": "portfolio"
     },
-       
     {
       "title": "Portfolio Website",
       "description": "A developer portfolio built with HTML, CSS and JavaScript — terminal-themed, fully responsive, and deployed on GitHub Pages.",
@@ -78,18 +71,22 @@
     }
   ],
 
-    "articles": [
-  {
-    "title": "Building a Mobile Money Switch",
-    "date": "2026-07-20",
-    "summary": "A technical write-up documenting the design and implementation of my mobile money interoperability backend built with NestJS and PostgreSQL.",
-    "tags": [
-      "NestJS",
-      "Backend",
-      "FinTech"
-    ],
-    "url": "https://www.linkedin.com/posts/precious-musole-933886236_fintech-malawi-softwareengineering-ugcPost-7484522874943246336-IgOH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrctbcB8SaBW7fZyyeahK2VBuTH0OkAnRw"
-      }
-    ]
+  "articles": [
+    {
+      "title": "Building a Mobile Money Switch",
+      "date": "2026-07-20",
+      "summary": "A technical write-up documenting the design and implementation of my mobile money interoperability backend built with NestJS and PostgreSQL.",
+      "tags": ["NestJS", "Backend", "FinTech"],
+      "url": "https://www.linkedin.com/posts/precious-musole-933886236_fintech-malawi-softwareengineering-ugcPost-7484522874943246336-IgOH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrctbcB8SaBW7fZyyeahK2VBuTH0OkAnRw"
+    },
+    {
+      "title": "Virtual Hackathon - Finovate by MUBAS and National Bank",
+      "date": "2026-08-10",
+      "summary": "My experience building Mphamvu during the Virtual Hackathon - Finovate, hosted by MUBAS and the National Bank of Malawi, where teamwork, product thinking, and rapid execution shaped our journey.",
+      "tags": ["Hackathon", "Finovate", "MUBAS", "National Bank", "Teamwork"],
+      "url": "article.html?article=mphanvu-hackathon",
+      "file": "articles/mphanvu-hackathon.json"
+    }
+  ]
 }
 
